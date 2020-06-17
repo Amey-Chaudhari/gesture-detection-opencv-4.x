@@ -71,7 +71,7 @@ while cap.isOpened():
         b = math.sqrt((far[0] - start[0])**2 + (far[1] - start[1])**2)
         c = math.sqrt((end[0] - far[0])**2 + (end[1] - far[1])**2)
 
-        # apply cosine rule here
+        # apply cosine rule
         angle = math.acos((b**2 + c**2 - a**2)/(2*b*c)) * 57
 
         # ignore angles > 90 and highlight rest with red dots
@@ -79,13 +79,11 @@ while cap.isOpened():
             count_defects += 1
             cv2.circle(crop_img, far, 1, [0, 0, 255], -1)
         # dist = cv2.pointPolygonTest(cnt,far,True)
-
-        # draw a line from start to end i.e. the convex points (finger tips)
-        # (can skip this part)
+        
         cv2.line(crop_img, start, end, [0, 255, 0], 2)
         cv2.circle(crop_img, far, 5, [0, 0, 255], -1)
 
-    # define actions required
+    # define actions
     if count_defects == 1:
         cv2.putText(img, "I am Amey", (20, 40), fontFace=cv2.FONT_HERSHEY_SIMPLEX, fontScale=1, color=(255, 255, 255))
     elif count_defects == 2:
@@ -97,7 +95,7 @@ while cap.isOpened():
     else:
         cv2.putText(img, "Hello World!!!", (20, 40), fontFace=cv2.FONT_HERSHEY_SIMPLEX, fontScale=1, color=(255, 255, 255))
 
-    # show appropriate images in windows
+    # show appropriate image
     cv2.imshow('Gesture', img)
     all_img = np.hstack((drawing, crop_img))
     cv2.imshow('Contours', all_img)
