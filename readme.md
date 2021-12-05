@@ -4,7 +4,6 @@ Originally developed by Intel, it was later supported by Willow Garage then Itse
 Recognizing "Hand Gestures" using OpenCV and Python.
 
 ** Libraries needed **
-
-cv2
+cv2 \n
 imutils
 numpy
