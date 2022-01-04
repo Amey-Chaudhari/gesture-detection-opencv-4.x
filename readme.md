@@ -10,6 +10,6 @@ Recognizing "Hand Gestures" using OpenCV and Python.
 cv2 
 imutils
 numpy
-matplotlib
+
 ```
 ![img](https://miro.medium.com/max/1200/1*O5rRGGWEsc7zWNFyIQGunA.jpeg)
