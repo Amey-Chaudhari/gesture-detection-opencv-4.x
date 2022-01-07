@@ -4,7 +4,7 @@ OpenCV is a library of programming functions mainly aimed at real-time computer 
 Originally developed by Intel, it was later supported by Willow Garage then Itseez.
 
 Gesture recognition is a topic in computer science and language technology with the goal of interpreting human gestures via mathematical algorithms. 
-It is a subdiscipline of computer vision. Gestures can originate from any bodily motion or state but commonly originate from the face or hand.
+It is a subdiscipline of computer vision. </br> Gestures can originate from any bodily motion or state but commonly originate from the face or hand.
 
 Recognizing "Hand Gestures" using OpenCV and Python.
 
