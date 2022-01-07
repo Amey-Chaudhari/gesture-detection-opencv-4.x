@@ -1,6 +1,6 @@
 # Gesture-Detection - OpenCV
 
-OpenCV is a library of programming functions mainly aimed at real-time computer vision. 
+OpenCV is a library of programming functions mainly aimed at real-time computer vision. </br>
 Originally developed by Intel, it was later supported by Willow Garage then Itseez.
 
 Gesture recognition is a topic in computer science and language technology with the goal of interpreting human gestures via mathematical algorithms. 
